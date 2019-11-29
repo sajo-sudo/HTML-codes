@@ -1,0 +1,455 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        .top {
+            background-color: #f5f5f5;
+        }
+
+        .container1 {
+            background: lightskyblue;
+            width: 100%;
+            margin: auto;
+            overflow: auto;
+            max-width: 1140px;
+            background-color: #f5f5f5;
+            padding: 10px 0px 10px 22px;
+
+        }
+
+        .container2 {
+            background: lightskyblue;
+            width: 100%;
+            margin: auto;
+            overflow: auto;
+            max-width: 1140px;
+            background-color: #f5f5f5;
+            padding: 10px 0px 10px 22px;
+            background: #fff
+        }
+
+        .container2 img {
+            width: 180px
+        }
+
+        .column {
+            float: left;
+            text-align: center;
+            color: rgb(82, 88, 94);
+            padding: 10px 20px;
+            font-family: Roboto;
+            font-size: 14px;
+        }
+
+        .header {
+            font-size: 14px;
+            color: #505050;
+            line-height: 1.6em;
+            font-weight: 400;
+            background: #fff
+        }
+
+
+        .btn-primary {
+            background: #2468f6;
+            color: white;
+            border-radius: 10px;
+            width: auto;
+            text-align: center;
+
+        }
+
+        .how-it-work {
+
+            background: transparent linear-gradient(0deg, #e0eafc 0%, #cfdef3 100%) 0% 0% no-repeat padding-box;
+            margin-top: 114px;
+
+
+        }
+
+
+
+        .how-it-work .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #333;
+            height: 320px;
+        }
+
+        .row {
+            display: -webkit-box;
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        .col {
+            flex-basis: 0;
+            -webkit-box-flex: 1;
+            flex-grow: 1;
+            max-width: 100%;
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .heading {
+            font-size: 18px;
+            line-height: 32px;
+            margin: 0;
+            text-align: center;
+            color: #333;
+            font-family: "Roboto", sans-serif
+        }
+
+        .wv-lg-heading {
+            letter-spacing: -0.8px;
+            font-size: 40px;
+            line-height: 50px;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            color: #333;
+            font-family: "Roboto", sans-serif;
+            font-weight: normal;
+
+        }
+
+
+        .img-scroll {
+            position: relative;
+            top: -8%;
+            margin-bottom: 220px;
+        }
+
+        .img-scroll .container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-image: url(https://workativ.com/line.6e84ce1b.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position-y: -18px;
+        }
+
+        .container {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 1140px;
+
+        }
+
+        .row {
+            display: -webkit-box;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        .img-scroll .col {
+            padding-left: 20px;
+            padding-right: 20px;
+            cursor: pointer;
+        }
+
+        .col {
+            flex-basis: 0;
+            -webkit-box-flex: 1;
+            flex-grow: 1;
+            max-width: 60%;
+        }
+
+
+        .text-center {
+            text-align: center !important;
+        }
+
+        .wv-banner-img-scroll .col {
+            padding-left: 20px;
+            padding-right: 20px;
+
+        }
+
+        .mb-4,
+        .my-4 {
+            margin-bottom: 1.5rem !important;
+        }
+
+        .wv-heading-h4 {
+            font-size: 20px;
+            line-height: 28px;
+            margin: 0;
+            font-family: "Roboto", sans-serif;
+            color: #485a63;
+            margin-bottom: .5rem !important;
+        }
+
+        .wv-md-heading {
+            font-size: 18px;
+            line-height: 32px;
+            margin: 0;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .img-scroll .img-responsive img {
+            max-height: 120px;
+            width: 100%;
+        }
+
+        .content {
+            padding: 40px 0 20px 0;
+        }
+
+        .listbox {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+            max-width: 25%;
+            position: relative;
+            width: 100%;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        /* 
+        .heading {
+            position: sticky;
+            position: -webkit-sticky;
+            top: 35%;
+            z-index: 5;
+            transition: ease 0.3s;
+        } */
+
+        .wv-heading {
+            font-size: 14px;
+            line-height: 24px;
+            color: #333333;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .number-heading ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            padding-top: 18px;
+            font-family: "Roboto", sans-serif;
+
+        }
+
+        .number-heading ul li {
+            margin-bottom: 18px;
+        }
+
+        .number-heading ul li a {
+            color: #adadad;
+        }
+
+        /* .number-heading ul li a:before {
+            counter-increment: my-sec-counter + 1;
+            content: ""counter(my-sec-counter) "";
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            margin-right: 13px;
+            background-color: #adadad;
+            border-radius: 100%;
+            color: #fff;
+            vertical-align: baseline;
+            line-height: 32px;
+            counter-increment: my-sec-counter;
+            content: counter(my-sec-counter);
+        } */
+        .wv-heading-h4 {
+            font-size: 20px;
+            line-height: 28px;
+            margin: 0;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .wv-md-heading1 {
+            font-size: 16px;
+            line-height: 28px;
+            margin: 0;
+            font-family: "Roboto", sans-serif;
+            margin-bottom: 1.5rem !important;
+        }
+
+        .wv-limited-content {
+            max-width: 680px;
+        }
+
+        .pic-Box img {
+            width: 100%;
+        }
+
+        .wv-content-area {
+            padding: 20px;
+        }
+
+        .pic-Box {
+            max-width: 60.666667%;
+            flex: 0 0 60.666667%;
+            -webkit-box-flex: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div class="container1">
+            <img src="https://workativ.com/workativ-logo.9fe1626d.png" style=" height: 24px; float: left; ">
+            <div style=" float: right; font-size: 16px; color: rgb(82, 88, 94);">
+                Contact Us
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="container2">
+            <div style="  float:left;">
+                <img src="https://workativ.com/assistant-logo.17b38c45.png" alt="Workativ Assistant Logo">
+            </div>
+            <div style=" float:right;">
+                <div class="column">
+                    <span>FEATURS</span>
+                </div>
+                <div class="column">
+                    <span>HOW TO IT WORKS</span>
+                </div>
+                <div class="column">
+                    <span>INTEGRATION</span>
+                </div>
+                <div class="column">
+                    <span>USECASES</span>
+                </div>
+                <div class="column btn-primary">
+                    <span>Try Beta</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="how-it-work">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="heading">How it works</p>
+                    <h2 class="wv-lg-heading">
+                        Identify the conversation you want to build
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="img-scroll">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col" onclick="scrollToTargetEle('#section-1')" data-source="#section-1">
+                    <div class="img-responsive mb-4">
+                        <img src="https://workativ.com/build.f7e8af12.svg">
+                    </div>
+                    <h4 class="wv-heading-h4 mb-2">Build</h4>
+                    <p class="wv-md-heading wv-weight-normal wv-text-primary wv-limited-content mb-4">
+                        Create a <br>conversation flow
+                    </p>
+                </div>
+                <div class="col" onclick="scrollToTargetEle('#section-2')" data-source="#section-2">
+                    <div class="img-responsive mb-4">
+                        <img src="https://workativ.com/test-and-deploy.3f9b765f.svg">
+                    </div>
+                    <h4 class="wv-heading-h4 mb-2">Test &amp; Deploy</h4>
+                    <p class="wv-md-heading wv-weight-normal wv-text-primary wv-limited-content mb-4">
+                        Test &amp; Deploy <br>the conversations
+                    </p>
+                </div>
+                <div class="col" onclick="scrollToTargetEle('#section-3')" data-source="#section-3">
+                    <div class="img-responsive mb-4">
+                        <img src="https://workativ.com/analye-data.276051b7.svg">
+                    </div>
+                    <h4 class="wv-heading-h4 mb-2">Analyze Data</h4>
+                    <p class="wv-md-heading wv-weight-normal wv-text-primary wv-limited-content mb-4">
+                        Get user insights
+                    </p>
+                </div>
+
+                <div class="col" onclick="scrollToTargetEle('#section-4')" data-source="#section-4">
+                    <div class="img-responsive mb-4">
+                        <img src="https://workativ.com/training.a2ea0a51.svg">
+                    </div>
+                    <h4 class="wv-heading-h4 mb-2">Train the VA</h4>
+                    <p class="wv-md-heading wv-weight-normal wv-text-primary wv-limited-content mb-4">
+                        Train the <br>virtual assistant
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="listbox">
+                    <aside class="number-heading">
+                        <p class="wv-heading">How it works</p>
+                        <ul class="mb-5">
+                            <li>
+                                <a href="javascript:void(0)" onclick="scrollToTargetEle('#section-1')"
+                                    data-source="#section-1" class="current"></a>Build</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" onclick="scrollToTargetEle('#section-2')"
+                                    data-source="#section-2">Test &amp; Deploy</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" onclick="scrollToTargetEle('#section-3')"
+                                    data-source="#section-3">Analyze Data</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" onclick="scrollToTargetEle('#section-4')"
+                                    data-source="#section-4">Train the VA</a>
+                            </li>
+                        </ul>
+                        <a class="searchbychar" href="#" data-target="partner">Back to top ↑</a>
+                    </aside>
+                </div>
+                <div class="col-md-9 col-sm-12 col-xs-12">
+                    <div class="wv-content-area">
+                        <section class="wv-content-section mb-5">
+                            <div class="row">
+                                <div class="col">
+                                    <h4 class="wv-heading-h4 mb-2">
+                                        Dialog Creator &amp; Automation Builder
+                                    </h4>
+                                    <p class="wv-md-heading1 wv-weight-normal wv-text-primary wv-limited-content mb-4">
+                                        Dialogs define how the virtual assistant responds to user
+                                        requests or queries. Identify the conversations you need
+                                        to create for delivering effective support and build them
+                                        on the dialog creator
+                                    </p>
+                                    <div class="row">
+                                        <div class="pic-Box">
+                                            <img src="https://workativ.com/1.3fea3bdc.jpg" class="img-responsive">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
